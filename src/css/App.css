@@ -1,0 +1,293 @@
+.hero-section {
+  background-image: url('../img/wooden-green-vase-flower-background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.welcome-banner {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  margin: auto;
+  animation: fadeInBanner 1s ease-in-out;
+}
+
+.sub-text {
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.mood-display {
+  background: rgba(255, 223, 186, 0.9);
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  font-weight: bold;
+  color: #d35400;
+  margin-top: 15px;
+}
+
+.welcome-text {
+  color: white;
+  text-shadow:
+    -1px -1px 0 #4CAF50,
+    1px -1px 0 #4CAF50,
+    -1px 1px 0 #4CAF50,
+    1px 1px 0 #4CAF50;
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero-section h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+}
+
+.features-section {
+  padding: 60px 0;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.feature-card i {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  margin-bottom: 15px;
+}
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  color: #4CAF50 !important;
+  font-weight: 600;
+}
+
+.nav-link {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #4CAF50 !important;
+}
+
+.dropdown-item {
+  color: #333 !important;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #4CAF50 !important;
+}
+
+.alert-box {
+  position: fixed;
+  top: 70px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  text-align: center;
+  background: #3a4160;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  animation: fadeIn 0.5s ease, fadeOut 0.5s ease 2.5s forwards;
+  z-index: 9999;
+}
+
+@keyframes fadeInBanner {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate(-50%, -40px);
+  }
+}
+
+.justify-text {
+  text-align: justify;
+}
+
+.modal-header {
+  background-color: #079f49;
+  color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.modal-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: white !important;
+}
+
+
+.mood-button {
+  background: linear-gradient(135deg, #A8E6CF, #81C784);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mood-button:hover {
+  background: linear-gradient(135deg, #81C784, #A8E6CF);
+  transform: scale(1.05);
+}
+
+.mood-button:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+
+.spotify-player-container {
+  transition: transform 0.3s ease-in-out, opacity 0.3s;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(135deg, #54cba5, #0f94dc);
+  padding: 10px;
+  z-index: 1000;
+  box-shadow: 0px -4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.spotify-iframe {
+  border-radius: 10px;
+}
+
+.show {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.hide {
+  transform: translateY(100%);
+  opacity: 0;
+  pointer-events: none;
+}
+.toggle-player {
+  position: fixed;
+  bottom: 10px; 
+  left: 50%;
+  transform: translateX(-50%); 
+  z-index: 1100;
+}
+
+.toggle-player-btn {
+  background: #1DB954;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.toggle-player-btn:hover {
+  background: #17a347;
+}
+
+.music-container {
+  padding-bottom: 120px;
+}
+
+.music-card {
+  background: #e3f2fd;
+  border-radius: 15px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+.music-card:hover {
+  transform: scale(1.02);
+}
+
+.play-button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.play-button:hover {
+  background-color: #388e3c;
+}
+
+.no-music {
+  color: #607d8b;
+  font-size: 18px;
+}
